@@ -1,0 +1,12 @@
+/* Webfont: Noirden-SemiBoldOblique */@font-face {
+    font-family: 'Noirden';
+    src: url('Noirden-SemiBoldOblique.eot'); /* IE9 Compat Modes */
+    src: url('Noirden-SemiBoldOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Noirden-SemiBoldOblique.woff') format('woff'), /* Modern Browsers */
+         url('Noirden-SemiBoldOblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Noirden-SemiBoldOblique.svg#Noirden-SemiBoldOblique') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

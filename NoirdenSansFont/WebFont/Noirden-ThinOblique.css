@@ -1,0 +1,12 @@
+/* Webfont: Noirden-ThinOblique */@font-face {
+    font-family: 'Noirden';
+    src: url('Noirden-ThinOblique.eot'); /* IE9 Compat Modes */
+    src: url('Noirden-ThinOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Noirden-ThinOblique.woff') format('woff'), /* Modern Browsers */
+         url('Noirden-ThinOblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Noirden-ThinOblique.svg#Noirden-ThinOblique') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
