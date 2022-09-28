@@ -6,6 +6,7 @@
 	--grey:#252525;
 	--textstack:#c8c8c8;
 
+
 }
 	/* Webfont: Noirden-LightOblique */
 @font-face {
@@ -52,6 +53,44 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+/* Webfont: Noirden-SemiBoldOblique */@font-face {
+    font-family: 'Noirden';
+    src: url(NoirdenSansFont/WebFont/Noirden-SemiBoldOblique.eot); /* IE9 Compat Modes */
+    src: url(NoirdenSansFont/WebFont/Noirden-SemiBoldOblique.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+         url(NoirdenSansFont/WebFont/Noirden-SemiBoldOblique.woff) format('woff'), /* Modern Browsers */
+         url(NoirdenSansFont/WebFont/Noirden-SemiBoldOblique.ttf) format('truetype'), /* Safari, Android, iOS */
+         url(NoirdenSansFont/WebFont/Noirden-SemiBoldOblique.svg#Noirden-SemiBoldOblique) format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Noirden-RegularOblique */@font-face {
+    font-family: 'NoirdenRegular';
+    src: url(NoirdenSansFont/WebFont/Noirden-Regular.eot); /* IE9 Compat Modes */
+    src: url(NoirdenSansFont/WebFont/Noirden-Regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+         url(NoirdenSansFont/WebFont/Noirden-Regular.woff) format('woff'), /* Modern Browsers */
+         url(NoirdenSansFont/WebFont/Noirden-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
+         url(NoirdenSansFont/WebFont/Noirden-Regular.svg#Noirden-RegularOblique) format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Noirden-Bold */@font-face {
+    font-family: 'NoirdenBold';
+    src: url(NoirdenSansFont/WebFont/Noirden-Bold.eot); /* IE9 Compat Modes */
+    src: url(NoirdenSansFont/WebFont/Noirden-Bold.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+         url(NoirdenSansFont/WebFont/Noirden-Bold.woff) format('woff'), /* Modern Browsers */
+         url(NoirdenSansFont/WebFont/Noirden-Bold.ttf) format('truetype'), /* Safari, Android, iOS */
+         url(NoirdenSansFont/WebFont/Noirden-Bold.svg#Noirden-Bold) format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
 @font-face {
 	font-family: 'ComicBookCommando';
 	src: url(comicv3/Comicv3.ttf) format('truetype');
@@ -68,7 +107,9 @@
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
-	
+	line-height: 123%;
+	letter-spacing: 0.035em;
+	word-spacing: 0.035em;
   }
 a {
 	text-decoration: none;
@@ -77,22 +118,6 @@ a {
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
-  }
-
-  @media only screen and (min-width: 600px) {
-	/* For tablets: */
-	.col-t-1 {width: 8.33%;}
-	.col-t-2 {width: 16.66%;}
-	.col-t-3 {width: 25%;}
-	.col-t-4 {width: 33.33%;}
-	.col-t-5 {width: 41.66%;}
-	.col-t-6 {width: 50%;}
-	.col-t-7 {width: 58.33%;}
-	.col-t-8 {width: 66.66%;}
-	.col-t-9 {width: 75%;}
-	.col-t-10 {width: 83.33%;}
-	.col-t-11 {width: 91.66%;}
-	.col-t-12 {width: 100%;}
   }
   
   @media only screen and (min-width: 768px) {
@@ -117,7 +142,7 @@ a {
 	position:sticky;
 	height : 80px;
 	top: 0;
-	backdrop-filter: blur(12px); 
+	backdrop-filter: blur(20px); 
 	padding-top: 30px;
 	padding-right: 5.5%;
 	padding-left: 5.5%;
@@ -133,6 +158,7 @@ a {
 	width: 60px;
 	height: 40px;
 	/* padding: 30px 0px 20px 20px; */
+	transition: 0.3s ease;
 }
 /* Bookmark  */
 
@@ -140,7 +166,7 @@ a {
 	flex: 2;
 	display: none;
 	padding-top: 18px;
-	font-family: 'NoirdenLightOblique';
+	font-family: 'NoirdenLight';
 	font-weight: normal;
 	color: var(--beige);
 	font-size: 20px;
@@ -151,7 +177,7 @@ a {
 	flex: 2;
 	display: none;
 	padding-top: 18px;
-	font-family: 'NoirdenLightOblique';
+	font-family: 'NoirdenLight';
 	font-weight: normal;
 	color: var(--beige);
 	font-size: 20px;
@@ -216,6 +242,7 @@ a {
 	font-weight: 'normal';
 	font-size: 20px;
 	align-items: center;
+	transition: 0.3s ease;
 
 }
 .worktext{
@@ -225,6 +252,7 @@ a {
 	font-weight: 'normal';
 	font-size: 20px;
 	align-items: center;
+	transition: 0.3s ease;
 
 }
 .popelementlast{
@@ -240,6 +268,7 @@ a {
 	font-family: 'NoirdenLight';
 	font-weight: 'normal';
 	font-size: 20px;
+	transition: 0.3s ease;
 }
 /* For the cross button inside the popelement flexbox */
 .cross1{
@@ -251,6 +280,7 @@ a {
     background-color: var(--beige);
 	transition: 0.4s;
 	transform: translate(0, 0.5px) rotate(-45deg);
+
 }
 .cross2{
 	flex-basis: 30px;
@@ -269,24 +299,28 @@ a {
 	margin-top: 80px;
 	margin-left: 7%;
 	margin-right: 7%;
+	transition: 0.3s ease;
 
 }
 .hellotext{
-	font-family:'NoirdenLight';
+	font-family:'NoirdenRegular';
 	font-weight: "normal";
 	font-size: 20px;
 	color: #FEFEFE;
+	transition: 0.3s ease;
 }
 .imvenkatwrapper{
 	margin-top: 16px;
 	display: flex;
 	padding: 0;
+	transition: 0.3s ease;
 }
 .imtext{
 	font-family:'NoirdenSemiBold';
 	font-weight: "normal";	
 	font-size: 64px;
 	color: white;
+	transition: 0.3s ease;
 }
 .Venkat{
 	font-family:'NoirdenSemiBold';
@@ -294,13 +328,16 @@ a {
 	font-size: 64px;
 	color: var(--blue);
 	margin-left: 7px;
+	transition: 0.3s ease;
 }
 .shortintro{
 	margin-top: 16px;
-	font-family:'NoirdenExtraLight';
+	font-family:'NoirdenRegular';
 	font-weight: "normal";
 	font-size: 20px;
 	color: var(--textstack) ;
+	transition: 0.3s ease;
+	
 }
 /* Presentation SVG */
 .centerholder{
@@ -314,12 +351,14 @@ a {
 	position: relative;
 }
 .background{
+	display: inline;
 	margin-left: 16.1%;
 	margin-right: 16.6%;
 	margin-top: 100px;
 	height: auto;
 }
 .rays{
+	display: inline;
 	position: absolute;
 	top: 11px;
 	left: 42px;
@@ -328,6 +367,7 @@ a {
 	transition: all 1s ease;
 }
 .concepts{
+	display: inline;
 	position: absolute;
 	top: 23.5px;
 	right: 19.5px;
@@ -335,6 +375,64 @@ a {
 	bottom:67px;
 	transition: all 1.5s ease;
 }
+.background{
+	display: inline;
+	margin-left: 16.1%;
+	margin-right: 16.6%;
+	margin-top: 100px;
+	height: auto;
+	transition: 3s ease;
+}
+.rays{
+	display: inline;
+	position: absolute;
+	top: 11px;
+	left: 42px;
+	right: 8px;
+	bottom: 59.13px;
+	transition: 3s ease;
+}
+.concepts{
+	display: inline;
+	position: absolute;
+	top: 23.5px;
+	right: 19.5px;
+	left: 116.5px ;
+	bottom:67px;
+	transition: 3s ease;
+}
+
+#Work1{
+	position: relative;
+}
+.bg1{
+	display: none;
+	margin-left: 32.2%;
+	margin-right: 33.2%;
+	margin-top: 200px;
+	height: auto;
+	transition: 3s ease;
+}
+.rays1{
+	display: none;
+	position: absolute;
+	top: 22px;
+	left: 84.53px;
+	right: 16.55px;
+	bottom: 118.27px;
+	transition: 3s ease;
+}
+.concepts1{
+	display: inline;
+	position: absolute;
+	top: 47.02px;
+	right: 38.94px;
+	left: 233.3px ;
+	bottom:102.55px;
+	transition: 3s ease;
+}
+
+
 /*  Project cards  */
 .Projects{
 	display: flex;
@@ -349,19 +447,19 @@ a {
 	margin-top: 100px;
 	margin-left: 5.5%;
 	margin-right: 5.5%;
-	border-radius: 5px;
-	padding:12px 3.75%;
+	border-radius: 5px 5px 0 0; 
+	padding:12px 3.75% 25px;
 }
 .holder{
 	display: flex;
 	justify-content: space-between;
 }
 .header{
-	font-family:"NoirdenLight";
+	font-family:"NoirdenSemiBold";
 	font-weight: normal;
 	font-size: 40px;
 	color: var(--blue);
-	width: 60%;
+	width: 53.7%;
 }	
 
 .workdates{
@@ -379,59 +477,64 @@ a {
 	justify-content:space-evenly;
 }	
 .shortdescription{
-	font-family: 'NoirdenLight';
+	font-family: 'NoirdenRegular';
 	font-style: normal;
-	font-size: 15px;
-	color: #C8C8C8;
-	margin-top: 30px;
+	font-size: 17px;
+	color: var(--textstack);
+	margin-top: 16px;
 	/* width: 87.5%; */
 	align-self: center;
-	padding-left: 6.25%;
-	padding-right: 6.25%;
+	line-height: 123%;
+	letter-spacing: 0.035em;
+	word-spacing: 0.035em;
 }
 .takeaways{
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 .takeawayboxes{
 	display: flex;
 	flex-direction: column;
-	height: 130px;
+	height: auto;
 }
 .heading{
 	display: flex;
-	font-family: 'NoirdenLight';
+	font-family: 'NoirdenRegular';
 	font-style: normal;
-	font-size: 15px;
-	color: white;
+	font-size: 17px;
+	color: var(--textstack);
 	justify-content: center;
 	align-items: center;
+	line-height: 130%;
+	letter-spacing: 0.035em;
+	word-spacing: 0.035em;
+	
 }
 .takeawayitems{
 	font-family: 'NoirdenLight';
 	font-style: normal;
-	font-size: 13px;
+	font-size: 17px;
 	color: var(--textstack);
+	line-height: 130%;
+	letter-spacing: 0.035em;
+	word-spacing: 0.035em;
 }
 ul li{
 	margin: 8px;
 }
 .buttonholder{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 }
 .gotoprojects{
 	display: flex;
-	width: 135px;
+	width: 88.8%;
 	height: 33px;
-	left: 173px;
-	top: 399px;
-	filter: drop-shadow(0px 0px 5px #FFC772);
-	background: #333;
-	border-radius: 5px;
+	background: #1A1919;
+	border-radius:0px 0px 5px 5px;
 	align-items: center;
-	font-family: 'NoirdenLight';
+	font-family: 'NoirdenBold';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -439,13 +542,12 @@ ul li{
 	color: var(--beige);
 	justify-content: center;
 	align-items: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 /* About Section  */
 .Aboutsection{
 	margin-top: 100px;
-}
-.hrsvg{
-	margin: 0px 20%;
 }
 .svgdescription{
 	margin-top: 8px;
@@ -456,21 +558,299 @@ ul li{
 	color: #FFFFFF;
 
 }
-.aboutimage{
+
+.Aboutholder{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--grey);
+	width: 88.8%;
+	height: auto;
 	margin-top: 100px;
 	margin-left: 5.5%;
 	margin-right: 5.5%;
+	border-radius: 5px;
+	padding:3.75%;
+}
+.aboutimage{
 	border-radius: 5px;
 }
 .roundcorners{
 	border-radius: 5px;
 }
 .aboutext{
-	font-family: 'NoirdenExtraLight';
+	font-family: 'NoirdenRegular';
 	font-style: normal;
 	font-size: 20px;
-	color: #FFFFFF;
-	margin-top: 30px;
-	margin-left: 5.5%;
-	margin-right: 5.5%;
+	color: var(--textstack);
+	margin-top: 16px;
+	/* width: 87.5%; */
+	align-self: center;
 }
+.Connectsection{
+	margin-top: 100px;
+}
+.connectsvg{
+	margin-bottom: 100px;
+} 
+.sociallinks{
+	margin-top: 20px;
+	display: flex;
+	padding:0 3.75%;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.endingnotes{
+	margin-top: 100px;
+	margin-left: 3.75%;
+	margin-right: 3.75%;
+}
+/* SAYONARA  */
+
+
+
+
+/* //////////////////////// */
+
+
+@media only screen and (min-width: 744px) {
+	/* For tablets: */
+	.topnav{
+		height : 160px;
+		padding-top: 60px;
+		padding-right: 40px;
+		padding-left: 40px;
+		padding-bottom: 20px;
+
+	
+	}
+	.icon{
+		width: 120px;
+		height: 80px;
+		/* padding: 30px 0px 20px 20px; */
+		transition: 0.3s ease ;
+	}
+	.bmarkwork{
+		padding-top: 36px;
+		font-size: 40px;
+		margin-left: 16px;
+		transition: 0.3s ease;
+	}
+	.bmarkabout{
+		padding-top: 36px;
+		font-size: 40px;
+		margin-left: 16px;
+		transition: 0.3s ease;
+	}
+	/* Hamburger menu icon  and transitions */
+	
+	
+	.bar1{
+		width: 66px;
+		height: 2px;
+		margin-top: 20px;
+	
+	}
+	
+	.bar2{
+		width: 66px;
+		height: 2px;
+		margin-top: 20px;
+	
+	}
+	/* POPOUT NAV */
+
+	.popout{
+		top:60px;
+		right:28px;
+		height:320px;
+		width:248px;
+		border-radius: 10px;
+		position: fixed;
+		transition: 0.5s;
+	}
+	.popelement{
+		padding:20px;
+		border-bottom: 2px solid black;
+		width: 248px;
+		z-index: 1;
+		text-decoration: none;	
+		border-radius: 10px 10px 0px 0px;
+		color: var(--beige);
+		font-family: 'NoirdenLight';
+		font-weight: 'normal';
+		font-size: 40px;
+		align-items: center;
+	
+	}
+	.worktext{
+		text-decoration: none;	
+		color: var(--beige);
+		font-family: 'NoirdenLight';
+		font-weight: 'normal';
+		font-size: 40px;
+		align-items: center;
+	
+	}
+	.popelementlast{
+		display: flex;
+		padding:20px;
+		background-color: var(--grey);
+		border-bottom: 2px solid black;
+		width: 248px;
+		z-index: 1;
+		text-decoration: none;	
+		border-radius: 10px;
+		color: var(--beige);
+		font-family: 'NoirdenLight';
+		font-weight: 'normal';
+		font-size: 40px;
+	}
+	/* For the cross button inside the popelement flexbox */
+	.cross1{
+		flex-basis: 30px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 50px;
+		height: 2px;
+		background-color: var(--beige);
+		transition: 0.4s;
+		transform: translate(0, 1px) rotate(-45deg);
+	}
+	.cross2{
+		flex-basis: 30px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 50px;
+		height: 2px;
+		background-color: var(--beige);
+		transition: 0.3s;
+		transform: translate(0, -1px) rotate(45deg);
+		
+	}
+	/* CSS for the jumbotron text */
+	.jumbo{
+		display: flex;
+		flex-direction: column;
+		margin-top: 160px;
+		margin-left: 40px;
+		margin-right: 14%;
+		transition: 0.3s ease;
+	
+	}
+	.hellotext{
+		font-family:'NoirdenRegular';
+		font-weight: "normal";
+		font-size: 40px;
+		color: #FEFEFE;
+		transition: 0.3s ease;
+	}
+	.imvenkatwrapper{
+		margin-top: 32px;
+		display: flex;
+		padding: 0;
+		transition: 0.3s ease;
+	}
+	.imtext{
+		font-family:'NoirdenSemiBold';
+		font-weight: "normal";	
+		font-size: 128px;
+		color: white;
+		transition: 0.3s ease;
+	}
+	.Venkat{
+		font-family:'NoirdenSemiBold';
+		font-weight: "normal";
+		font-size: 128px;
+		color: var(--blue);
+		margin-left: 14px;
+		transition: 0.3s ease;
+	}
+	.shortintro{
+		margin-top: 32px;
+		font-family:'NoirdenRegular';
+		font-weight: "normal";
+		font-size: 40px;
+		color: var(--textstack) ;
+		transition: 0.3s ease;
+		
+	}
+	/*  Project cards  */
+
+	.projectslink{
+		display: flex;
+		flex-direction: column;
+		width: 89.2%;
+		height: auto;
+		background-color: var(--grey);
+		margin-top: 200px;
+		margin-left: 5.37%;
+		margin-right: 5.37%;
+		border-radius: 10px 10px 0 0; 
+		padding:24px 3.61% 50px;
+	}
+	.header{
+		font-size: 80px;
+		color: var(--blue);
+		/* width: 53.1%;  */
+		/* ####3 */
+		width: 53.1%;
+	}	
+
+	.workdates{
+		font-size: 20px;
+		line-height: 20px;
+		color: #C8C8C8;
+		justify-content: end;
+		width:auto;
+	}
+	.workorgs1{
+		display: none;
+		justify-content:space-evenly;
+		margin-top: 60px;
+	}	
+	.shortdescription{
+		font-size: 34px;
+		color: var(--textstack);
+		margin-top: 60px;
+		/* width: 87.5%; */
+		align-self: center;
+	}
+	.takeaways{
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 60px;
+	}
+	.heading{
+		font-style: normal;
+		font-size: 34px;
+		color: var(--textstack);
+	}
+	.takeawayitems{
+		font-family: 'NoirdenLight';
+		font-style: normal;
+		font-size: 34px;
+	}
+	ul li{
+		margin: 16px;
+	}
+	.gotoprojects{
+		display: flex;
+		width: 89.2%;
+		height: 66px;
+		background: #1A1919;
+		border-radius:0px 0px 10px 10px;
+		align-items: center;
+		font-family: 'NoirdenBold';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 40px;
+		color: var(--beige);
+		justify-content: center;
+		align-items: center;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+  }
