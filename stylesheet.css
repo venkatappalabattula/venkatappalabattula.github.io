@@ -87,10 +87,6 @@
     text-rendering: optimizeLegibility;
 }
 
-
-
-
-
 @font-face {
 	font-family: 'ComicBookCommando';
 	src: url(comicv3/Comicv3.ttf) format('truetype');
@@ -98,10 +94,6 @@
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 }
-
-
-
-
 
 * {
 	box-sizing: border-box;
@@ -588,29 +580,54 @@ ul li{
 }
 .Connectsection{
 	margin-top: 100px;
-}
-.connectsvg{
-	margin-bottom: 100px;
 } 
 .sociallinks{
-	margin-top: 20px;
 	display: flex;
-	padding:0 3.75%;
 	justify-content: space-evenly;
 	align-items: center;
 
 }
-.endingnotes{
-	margin-top: 100px;
-	margin-left: 3.75%;
-	margin-right: 3.75%;
+.sayonara{
+	font-family: 'Noto Serif JP', serif;
+	font-size: 36px;
+	color: var(--textstack);
+	line-height: 124.99%;
+	letter-spacing: 0.58em;
+	margin-top: 150px;
 }
+.credittext{
+	color: var(--textstack);
+	font-family: 'NoirdenLight';
+	font-size: 15px;
+	margin-top: 16px;
+}
+.shootadm{
+	margin-top: 150px;
+	color: #696969;
+	transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* SAYONARA  */
 
 
 
 
 /* //////////////////////// */
+
+
+
+
+
 
 
 @media only screen and (min-width: 744px) {
@@ -852,5 +869,6 @@ ul li{
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
+	
 
   }
