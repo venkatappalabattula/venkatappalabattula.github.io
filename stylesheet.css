@@ -583,7 +583,7 @@ ul li{
 } 
 .sociallinks{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 
 }
@@ -825,6 +825,10 @@ ul li{
 		justify-content:space-evenly;
 		margin-top: 60px;
 	}	
+	.worksvgs{
+		width: 186px;
+		height: 58px;
+	}
 	.shortdescription{
 		font-size: 34px;
 		color: var(--textstack);
@@ -868,6 +872,44 @@ ul li{
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
-	
+	#tellmesvg{
+		width: 484px;
+		height: 280px;
+		margin-top: 200px;
+	}
+	.aboutext{
+		font-size: 40px;
+	}
+	#aboutimage{
+		width: 640px;
+		height: 960px;
+	}
+	.sayonara{
+		font-size: 72px;
+		margin-top: 300px;
+	}
+	.credittext{
+		font-size: 30px;
+	}
+	#dmshoot{
+		width: 368px;
+		height: 212px;
+		margin-top: 200px;
+	}
+	.connecticons{
+		width: 38px;
+		height: 38px;
+	}
+	#endlogo{
+		width: 58px;
+		height: 38px;
+	}
+	#endline{
+		width: 2px;
+		height: 48px;
+	}
+	.Aboutholder{
+		margin-top: 200px;
+	}
 
   }
