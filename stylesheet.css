@@ -917,3 +917,21 @@ ul li{
 	}
 
   }
+
+
+@media only screen and (min-width: 1200px) {
+	.desktopnav{
+		text-decoration: none;	
+		color: var(--beige);
+		font-family: 'NoirdenLight';
+		font-weight: 'normal';
+		font-size: 40px;
+		align-items: center;
+		transition: 0.3s ease;
+		visibility: hidden;
+	}
+
+
+
+
+}
