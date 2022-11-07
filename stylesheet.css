@@ -890,6 +890,7 @@ ul li{
 	}
 	.credittext{
 		font-size: 30px;
+		margin-top: 10px;
 	}
 	#dmshoot{
 		width: 368px;
@@ -910,6 +911,9 @@ ul li{
 	}
 	.Aboutholder{
 		margin-top: 200px;
+	}
+	.svgdescription{
+		font-size: 30px;
 	}
 
   }
