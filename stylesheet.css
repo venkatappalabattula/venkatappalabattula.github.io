@@ -130,7 +130,6 @@ a {
 
 /* Nav bar base sticky */
 .topnav{
-	display:flex;
 	position:sticky;
 	height : 80px;
 	top: 0;
@@ -605,7 +604,13 @@ ul li{
 	margin-top: 150px;
 	color: #696969;
 }
+#tabnav{
+	display: flex;
+}
 
+#tabgreet{
+	display: flex;
+}
 
 
 
@@ -919,7 +924,33 @@ ul li{
   }
 
 
-@media only screen and (min-width: 1200px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1280px) {
 	.desktopnav{
 		text-decoration: none;	
 		color: var(--beige);
@@ -928,8 +959,51 @@ ul li{
 		font-size: 40px;
 		align-items: center;
 		transition: 0.3s ease;
-		visibility: hidden;
 	}
+	.desktopnav:hover{
+		color: #D66700;
+		cursor: pointer;
+	}
+
+	.desktopnavbar{
+		
+		padding-top: 40px;
+		padding-left: 3.125%;
+		transition: 0.3s ease;
+		height: auto;
+		padding-bottom: 0%;
+		
+		
+	}
+	.navitems{
+		display: flex;
+		margin-left: 37.57%;
+		justify-content: space-between;
+		width: 46.875%;
+		transition: 0.3s ease;
+		
+	}
+	.desktopgreet{
+		width: 99.8%;
+
+	}
+	.jumbo{
+		z-index: 2;
+		margin-left: 3.125%;
+		margin-top: 200px;
+		transition: 0.3s ease;
+		max-width: 70%;
+		
+
+	}
+	.greetimage{
+		z-index: 1;
+		position: relative;
+		right: 0%;
+		margin-top: 200px;
+	}
+
+	
 
 
 
