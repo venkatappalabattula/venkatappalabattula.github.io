@@ -825,7 +825,6 @@ ul li{
 	.projectslink{
 		display: flex;
 		flex-direction: column;
-		width: 89.2%;
 		height: auto;
 		background-color: var(--grey);
 		margin-top: 200px;
@@ -881,7 +880,6 @@ ul li{
 	}
 	.gotoprojects{
 		display: flex;
-		width: 89.2%;
 		height: 66px;
 		background: #1A1919;
 		border-radius:0px 0px 10px 10px;
@@ -1048,7 +1046,6 @@ ul li{
 		flex-direction: column;
 	}
 	.projectslink{
-		width: 46.1%;
 		height: auto;
 	}
 	.deskleftprojectsflex{
