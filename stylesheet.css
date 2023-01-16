@@ -450,7 +450,7 @@ a {
 	font-weight: normal;
 	font-size: 40px;
 	color: var(--blue);
-	width: 53.7%;
+	width: auto;
 }	
 
 .workdates{
@@ -467,6 +467,16 @@ a {
 	margin-top: 30px;
 	justify-content:space-evenly;
 }	
+.workorgs1{
+	display: flex;
+	justify-content:space-evenly;
+	margin-top: 60px;
+}
+.workorgs2{
+	display: flex;
+	justify-content:space-evenly;
+	margin-top: 60px;
+}
 .shortdescription{
 	font-family: 'NoirdenRegular';
 	font-style: normal;
@@ -611,7 +621,21 @@ ul li{
 #tabgreet{
 	display: flex;
 }
-
+#tabworksvg{
+	display: flex;
+}
+#tabprojects{
+	display: flex;
+}
+/* .carousel{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	height: auto;
+	width: 100%;
+	margin-top: 30px;
+}
+ */
 
 
 
@@ -815,7 +839,7 @@ ul li{
 		color: var(--blue);
 		/* width: 53.1%;  */
 		/* ####3 */
-		width: 53.1%;
+		width: auto;
 	}	
 
 	.workdates{
@@ -825,11 +849,7 @@ ul li{
 		justify-content: end;
 		width:auto;
 	}
-	.workorgs1{
-		display: none;
-		justify-content:space-evenly;
-		margin-top: 60px;
-	}	
+		
 	.worksvgs{
 		width: 186px;
 		height: 58px;
@@ -921,6 +941,7 @@ ul li{
 		font-size: 30px;
 	}
 
+
   }
 
 
@@ -1002,6 +1023,73 @@ ul li{
 		right: 0%;
 		margin-top: 200px;
 	}
+
+	.deskworksvg{
+		display: flex;
+		margin-top: 200px;
+		justify-content: space-between;
+		
+	}
+
+
+	.deskworktext{
+		padding-left: 9.0625%;
+		font-family:'NoirdenSemiBold';
+		font-size: 128px;
+		color: #FFFFFF;
+	}
+	
+	.deskworksvgtext{
+		padding-right: 14%;
+	}
+
+	.Deskprojects{
+		display: flex;
+		flex-direction: column;
+	}
+	.projectslink{
+		width: 46.1%;
+		height: auto;
+	}
+	.deskleftprojectsflex{
+		display: flex;
+		margin-left: 7%;
+		margin-right: 7%;
+		justify-content: center;
+		justify-items: center;
+		margin-top: 200px;
+	}
+	.deskprojectsrightlink{
+		display: flex;
+		flex-direction: column;
+		background: #252525;
+		border-radius: 5px;
+		height: auto;
+		width: 46.1%;
+	}
+	.deskprojectlinks{
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		justify-items: center;
+
+	}
+	.deskprojectsrightlink:hover + .deskprojectlinks{
+		backdrop-filter: blur(18.5px);
+		background: rgba(111, 180, 209, 0.1);
+		border-radius: 5px;
+		display: flex;
+	}
+	.desklinktext{
+		font-family: 'NoirdenBold';
+		color: #FFC772;
+		margin-top: 10%;
+	}
+
+	.desklinktext:hover{
+		color: #D66700;
+	}
+
 
 	
 
