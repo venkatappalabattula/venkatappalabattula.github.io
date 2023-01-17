@@ -463,7 +463,7 @@ a {
 	width:auto;
 }
 .workorgs{
-	display: flex;
+	display: flex;s
 	margin-top: 30px;
 	justify-content:space-evenly;
 }	
@@ -472,10 +472,25 @@ a {
 	justify-content:space-evenly;
 	margin-top: 60px;
 }
-.workorgs2{
+#projworkorgs{
 	display: flex;
+	margin-top: 30px;
 	justify-content:space-evenly;
+}
+#projworkorgs1{
+	display: flex;
 	margin-top: 60px;
+	justify-content:space-evenly;
+}
+#projworkorgs3{
+	display: flex;
+	margin-top: 30px;
+	justify-content:space-evenly;
+}
+#projworkorgs4{
+	display: flex;
+	margin-top: 60px;
+	justify-content:space-evenly;
 }
 .shortdescription{
 	font-family: 'NoirdenRegular';
